@@ -1,5 +1,11 @@
 # from modules.functions import get_todos, write_todos "not necessary functions. before get_todos and write_todos", but requires __init__.py inside modules directory
+import time
+
 from modules import functions
+import time
+
+now = time.strftime('%b %d, %Y %H:%M:%S')
+print("It's", now)
 
 while True:
     user_action = input('Type add, show or display, edit, complete, or exit: ')
